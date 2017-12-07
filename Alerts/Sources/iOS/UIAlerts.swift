@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension ActionAppearance {
+internal extension ActionAppearance {
 
-    var alertStyle: UIAlertActionStyle {
+    internal var alertStyle: UIAlertActionStyle {
         switch self {
         case .cancel: return .cancel
         case .destructive: return .destructive
@@ -23,6 +23,10 @@ extension ActionAppearance {
 
 extension Alert {
 
+    /// Projects the context representation into a view-layer alert controller.
+    ///
+    /// - Parameter style: the style of alert controller to create.
+    /// - Returns: an alert controller corresponding with the properties of the receiver.
     public func asController(style: UIAlertControllerStyle) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
