@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal extension ActionAppearance {
+internal extension AlertAction.Behavior {
 
     internal var alertStyle: UIAlertActionStyle {
         switch self {
@@ -30,7 +30,7 @@ extension Alert {
     public func asController(style: UIAlertControllerStyle) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
-            controller.addAction(UIAlertAction(title: action.title, style: action.appearance.alertStyle) { _ in
+            controller.addAction(UIAlertAction(title: action.title, style: action.behavior.alertStyle) { _ in
                 action.action?()
             })
         }

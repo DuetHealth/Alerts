@@ -14,6 +14,20 @@ import Foundation
 /// support flexibility of consumption.
 public struct AlertAction {
 
+    /// Represents the functional result of an action.
+    public enum Behavior {
+
+        /// Performs the "functional opposite" of a confirmation action, i.e. disregarding or circumventing the alert.
+        case cancel
+
+        /// Performs an ambiguous behavior.
+        case `default`
+
+        /// Performs an irreversible (and potentially undesirable) action.
+        case destructive
+
+    }
+
     /// Initializes an action with intent to cancel, circumvent, or otherwise disregard the functional
     /// result of confirmation.
     ///
@@ -21,7 +35,7 @@ public struct AlertAction {
     ///   - title: the name of the action
     ///   - action: the behavior executed by the action
     public static func cancel(title: String, _ action: (() -> ())? = nil) -> AlertAction {
-        return AlertAction(title: title, appearance: .cancel, action)
+        return AlertAction(title: title, behavior: .cancel, action)
     }
 
     /// Intializes an action with ambiguous intent.
@@ -40,7 +54,7 @@ public struct AlertAction {
     ///   - title: the title of the action
     ///   - action: the behavior performed by the action
     public static func destructive(title: String, action: (() -> ())? = nil) -> AlertAction {
-        return AlertAction(title: title, appearance: .destructive, action)
+        return AlertAction(title: title, behavior: .destructive, action)
     }
 
     /// Returns the title of the action.
@@ -49,19 +63,13 @@ public struct AlertAction {
     /// Returns the behavior which is performed by the action.
     public let action: (() -> ())?
 
-    /// Returns the appearance of the action.
-    public let appearance: ActionAppearance
+    /// Returns the behavior of the action.
+    public let behavior: Behavior
 
-    fileprivate init(title: String, appearance: ActionAppearance = .default, _ action: (() -> ())?) {
+    fileprivate init(title: String, behavior: Behavior = .default, _ action: (() -> ())?) {
         self.title = title
         self.action = action
-        self.appearance = appearance
+        self.behavior = behavior
     }
 
-}
-
-public enum ActionAppearance {
-    case cancel
-    case `default`
-    case destructive
 }
