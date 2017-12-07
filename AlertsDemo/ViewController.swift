@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
 
         let alert = Alert(title: "Hooray!", message: "I'm in your face!", actions: .destructive(title: "DESTROY") {
-            let innerAlert = Alert(title: "Rest in Pieces", message: "☠️", actions: .default(title: "You're winner!"))
+            let innerAlert = Alert(title: "Rest in Pieces", message: "☠️", actions: .default(title: "You're winner!"), .cancel)
             self.present(innerAlert.asController(style: .actionSheet), animated: true)
         })
 

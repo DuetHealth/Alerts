@@ -21,7 +21,17 @@ internal extension AlertAction.Behavior {
 
 }
 
-extension Alert {
+public extension AlertAction {
+
+    /// Returns an action with intent to cancel, circumvent, or otherwise disregard the functional
+    /// result of confirmation. The action has the default title "Cancel".
+    public static var cancel: AlertAction {
+        return .cancel(title: NSLocalizedString("Cancel", comment: ""))
+    }
+
+}
+
+public extension Alert {
 
     /// Projects the context representation into a view-layer alert controller.
     ///
