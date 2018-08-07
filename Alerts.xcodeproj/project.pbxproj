@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		949DD2C521132B8B00A748D3 /* AlertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DD2C421132B8B00A748D3 /* AlertTextField.swift */; };
 		94A5F1A31FD9AA93001158F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 94A5F1A01FD9AA93001158F8 /* README.md */; };
 		94A5F1A41FD9AA93001158F8 /* Alerts.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A5F1A21FD9AA93001158F8 /* Alerts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A5F1A91FD9AB87001158F8 /* AlertsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1A81FD9AB87001158F8 /* AlertsTests.swift */; };
@@ -58,6 +59,7 @@
 		0D6F189544B0D1E328EF76DF /* Pods-AlertsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlertsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlertsTests/Pods-AlertsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D24FA29981BA6378D204F17 /* Pods-Alerts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alerts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alerts/Pods-Alerts.debug.xcconfig"; sourceTree = "<group>"; };
 		92B3E729F5355009C202D89B /* Pods_AlertsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlertsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		949DD2C421132B8B00A748D3 /* AlertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTextField.swift; sourceTree = "<group>"; };
 		94A5F1A01FD9AA93001158F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94A5F1A21FD9AA93001158F8 /* Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alerts.h; sourceTree = "<group>"; };
 		94A5F1A61FD9AAF2001158F8 /* Alerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 			children = (
 				94A5F1AD1FD9AD5A001158F8 /* Alert.swift */,
 				94A5F1AF1FD9AD61001158F8 /* AlertAction.swift */,
+				949DD2C421132B8B00A748D3 /* AlertTextField.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949DD2C521132B8B00A748D3 /* AlertTextField.swift in Sources */,
 				94A5F1B01FD9AD61001158F8 /* AlertAction.swift in Sources */,
 				94A5F1B21FD9B025001158F8 /* UIAlerts.swift in Sources */,
 				94A5F1AE1FD9AD5A001158F8 /* Alert.swift in Sources */,
