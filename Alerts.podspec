@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'Alerts'
-  s.version           = '1.0.0'
+  s.version           = '1.1.0'
   s.license           = 'MIT'
   s.summary           = 'A μ-framework for abstracting modal contexts.'
   s.homepage          = 'http://gitlab.duethealth.com/groups/ios-projects/Alerts'

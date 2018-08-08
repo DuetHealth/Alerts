@@ -20,6 +20,9 @@ public struct Alert {
     /// Returns the supplementary message of the alert.
     public let message: String?
 
+    /// Returns the list of text fields belonging to the alert.
+    public let textFields: [AlertTextField]
+
     /// Returns the list of executable actions belonging to the alert.
     public let actions: [AlertAction]
 
@@ -29,9 +32,10 @@ public struct Alert {
     ///   - title: the primary title of the alert
     ///   - message: an optional supplementary message
     ///   - actions: the list of executable actions belonging to the alert
-    public init(title: String? = nil, message: String? = nil, actions: AlertAction...) {
+    public init(title: String? = nil, message: String? = nil, textFields: [AlertTextField] = [], actions: AlertAction...) {
         self.title = title
         self.message = message
+        self.textFields = textFields
         self.actions = actions
     }
 
