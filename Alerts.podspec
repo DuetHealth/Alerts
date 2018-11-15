@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = 'Alerts'
-  s.version           = '1.1.0'
+  s.version           = '1.1.1'
   s.license           = 'MIT'
   s.summary           = 'A μ-framework for abstracting modal contexts.'
   s.homepage          = 'http://gitlab.duethealth.com/groups/ios-projects/Alerts'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.xcconfig          = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
   s.ios.deployment_target = '8.0'
-
+  s.swift_version         = '4.0'
 end
