@@ -11,7 +11,7 @@ import UIKit
 
 internal extension AlertAction.Behavior {
 
-    internal var alertStyle: UIAlertActionStyle {
+    internal var alertStyle: UIAlertAction.Style {
         switch self {
         case .cancel: return .cancel
         case .destructive: return .destructive
@@ -39,7 +39,7 @@ public extension Alert {
     ///
     /// - Parameter style: the style of alert controller to create.
     /// - Returns: an alert controller corresponding with the properties of the receiver.
-    public func asController(style: UIAlertControllerStyle, textFieldDelegate: UITextFieldDelegate? = nil) -> UIAlertController {
+    public func asController(style: UIAlertController.Style, textFieldDelegate: UITextFieldDelegate? = nil) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
             controller.addAction(UIAlertAction(title: action.title, style: action.behavior.alertStyle) { _ in
@@ -62,7 +62,7 @@ public extension Alert {
     ///
     /// - Parameter style: the style of alert controller to create.
     /// - Returns: an alert controller corresponding with the properties of the receiver.
-    public func asController(style: UIAlertControllerStyle, onTextFieldChanged: @escaping (UITextField, Int) -> ()) -> UIAlertController {
+    public func asController(style: UIAlertController.Style, onTextFieldChanged: @escaping (UITextField, Int) -> ()) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
             controller.addAction(UIAlertAction(title: action.title, style: action.behavior.alertStyle) { _ in
