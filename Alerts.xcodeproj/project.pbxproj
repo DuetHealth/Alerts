@@ -11,14 +11,12 @@
 		94841581220563C4007D46F2 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1AF1FD9AD61001158F8 /* AlertAction.swift */; };
 		94841582220563C4007D46F2 /* AlertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DD2C421132B8B00A748D3 /* AlertTextField.swift */; };
 		94841583220563C4007D46F2 /* UIAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1B11FD9B025001158F8 /* UIAlerts.swift */; };
-		94841584220563C6007D46F2 /* Alerts.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A5F1A21FD9AA93001158F8 /* Alerts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		948415782205638D007D46F2 /* Alerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9484157B2205638D007D46F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		949DD2C421132B8B00A748D3 /* AlertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTextField.swift; sourceTree = "<group>"; };
-		94A5F1A21FD9AA93001158F8 /* Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alerts.h; sourceTree = "<group>"; };
 		94A5F1AD1FD9AD5A001158F8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		94A5F1AF1FD9AD61001158F8 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		94A5F1B11FD9B025001158F8 /* UIAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlerts.swift; sourceTree = "<group>"; };
@@ -40,7 +38,6 @@
 			children = (
 				94A5F1AA1FD9AD3F001158F8 /* Common */,
 				94A5F1AB1FD9AD45001158F8 /* iOS */,
-				94A5F1A21FD9AA93001158F8 /* Alerts.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -87,7 +84,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94841584220563C6007D46F2 /* Alerts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
