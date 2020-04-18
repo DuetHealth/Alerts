@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift Package Manager](https://github.com/DuetHealth/Alerts/workflows/Swift%20Package%20Manager/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3A%22Swift+Package+Manager%22) 
+[![Actions Status](https://github.com/DuetHealth/Alerts/workflows/carthage/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3ACarthage) 
+[![Actions Status](https://github.com/DuetHealth/Alerts/workflows/cocoapods/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3ACocoapods)
+
 # Alerts
 
 Alerts is a μ-framework abstraction of modal contexts ("alerts"). The core library exposes the necessary data constructs for creating abstract alerts; the codebase also includes platform-specific functions for automatically producing resultant controls.
