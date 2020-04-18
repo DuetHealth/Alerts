@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: pod lib lint
-      # allow-warnings due to: https://github.com/CocoaPods/CocoaPods/issues/8570
       run: |
+        echo allow-warnings due to - https://github.com/CocoaPods/CocoaPods/issues/8570
         pod lib lint --allow-warnings
       shell: bash
 
