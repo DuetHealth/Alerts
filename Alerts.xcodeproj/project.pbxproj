@@ -10,20 +10,52 @@
 		94841580220563C4007D46F2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1AD1FD9AD5A001158F8 /* Alert.swift */; };
 		94841581220563C4007D46F2 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1AF1FD9AD61001158F8 /* AlertAction.swift */; };
 		94841582220563C4007D46F2 /* AlertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DD2C421132B8B00A748D3 /* AlertTextField.swift */; };
-		94841583220563C4007D46F2 /* UIAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1B11FD9B025001158F8 /* UIAlerts.swift */; };
+		B5D801F6244A9BAF00020301 /* UIAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5F1B11FD9B025001158F8 /* UIAlerts.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B5D801FA244A9BC100020301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54E9C5C1FC356B9000301C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948415772205638D007D46F2;
+			remoteInfo = Alerts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5D801FC244A9BC100020301 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		948415782205638D007D46F2 /* Alerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9484157B2205638D007D46F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		949DD2C421132B8B00A748D3 /* AlertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTextField.swift; sourceTree = "<group>"; };
 		94A5F1AD1FD9AD5A001158F8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		94A5F1AF1FD9AD61001158F8 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		94A5F1B11FD9B025001158F8 /* UIAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlerts.swift; sourceTree = "<group>"; };
+		B5D801F1244A9BA600020301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D80200244B258900020301 /* Alerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D80201244B25B800020301 /* AlertsUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertsUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		948415752205638D007D46F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D801EB244A9BA600020301 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				94A5F1AA1FD9AD3F001158F8 /* Common */,
-				94A5F1AB1FD9AD45001158F8 /* iOS */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -52,35 +83,61 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		94A5F1AB1FD9AD45001158F8 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				94A5F1B11FD9B025001158F8 /* UIAlerts.swift */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
 		B54E9C5B1FC356B9000301C6 = {
 			isa = PBXGroup;
 			children = (
 				B54E9C671FC356B9000301C6 /* Alerts */,
-				948415782205638D007D46F2 /* Alerts.framework */,
+				B5D801EF244A9BA600020301 /* AlertsUI */,
+				B5D801F7244A9BC100020301 /* Frameworks */,
+				B5D80200244B258900020301 /* Alerts.framework */,
+				B5D80201244B25B800020301 /* AlertsUI.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		B54E9C671FC356B9000301C6 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				9484157B2205638D007D46F2 /* Info.plist */,
 				94A5F1A11FD9AA93001158F8 /* Sources */,
+				9484157B2205638D007D46F2 /* Info.plist */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		B5D801EF244A9BA600020301 /* AlertsUI */ = {
+			isa = PBXGroup;
+			children = (
+				B5D801FD244A9EB000020301 /* Sources */,
+				B5D801F1244A9BA600020301 /* Info.plist */,
+			);
+			path = AlertsUI;
+			sourceTree = "<group>";
+		};
+		B5D801F7244A9BC100020301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5D801FD244A9EB000020301 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				94A5F1B11FD9B025001158F8 /* UIAlerts.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		948415732205638D007D46F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D801E9244A9BA600020301 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,7 +162,27 @@
 			);
 			name = Alerts;
 			productName = Alerts;
-			productReference = 948415782205638D007D46F2 /* Alerts.framework */;
+			productReference = B5D80200244B258900020301 /* Alerts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5D801ED244A9BA600020301 /* AlertsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D801F5244A9BA600020301 /* Build configuration list for PBXNativeTarget "AlertsUI" */;
+			buildPhases = (
+				B5D801E9244A9BA600020301 /* Headers */,
+				B5D801EA244A9BA600020301 /* Sources */,
+				B5D801EB244A9BA600020301 /* Frameworks */,
+				B5D801EC244A9BA600020301 /* Resources */,
+				B5D801FC244A9BC100020301 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5D801FB244A9BC100020301 /* PBXTargetDependency */,
+			);
+			name = AlertsUI;
+			productName = "Alerts-UIKit";
+			productReference = B5D80201244B25B800020301 /* AlertsUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -115,12 +192,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Duet Health";
 				TargetAttributes = {
 					948415772205638D007D46F2 = {
 						CreatedOnToolsVersion = 10.1;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1140;
+						ProvisioningStyle = Manual;
+					};
+					B5D801ED244A9BA600020301 = {
+						CreatedOnToolsVersion = 11.4.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,12 +220,20 @@
 			projectRoot = "";
 			targets = (
 				948415772205638D007D46F2 /* Alerts */,
+				B5D801ED244A9BA600020301 /* AlertsUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		948415762205638D007D46F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D801EC244A9BA600020301 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,12 +249,27 @@
 			files = (
 				94841581220563C4007D46F2 /* AlertAction.swift in Sources */,
 				94841582220563C4007D46F2 /* AlertTextField.swift in Sources */,
-				94841583220563C4007D46F2 /* UIAlerts.swift in Sources */,
 				94841580220563C4007D46F2 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5D801EA244A9BA600020301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D801F6244A9BAF00020301 /* UIAlerts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5D801FB244A9BC100020301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948415772205638D007D46F2 /* Alerts */;
+			targetProxy = B5D801FA244A9BC100020301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9484157E2205638D007D46F2 /* Debug */ = {
@@ -173,22 +278,25 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 75Y586SA36;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Alerts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Alerts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -199,21 +307,24 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 75Y586SA36;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Alerts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duet.Alerts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -232,6 +343,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -239,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -267,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -292,6 +405,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -299,6 +413,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -321,13 +436,72 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5D801F3244A9BA600020301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AlertsUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duethealth.AlertsUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5D801F4244A9BA600020301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AlertsUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duethealth.AlertsUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -348,6 +522,15 @@
 			buildConfigurations = (
 				B54E9C771FC356B9000301C6 /* Debug */,
 				B54E9C781FC356B9000301C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D801F5244A9BA600020301 /* Build configuration list for PBXNativeTarget "AlertsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D801F3244A9BA600020301 /* Debug */,
+				B5D801F4244A9BA600020301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

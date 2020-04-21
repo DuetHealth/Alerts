@@ -6,12 +6,13 @@
 //  Copyright © 2017 Duet Health. All rights reserved.
 //
 
+import Alerts
 import Foundation
 import UIKit
 
 internal extension AlertAction.Behavior {
 
-    internal var alertStyle: UIAlertAction.Style {
+    var alertStyle: UIAlertAction.Style {
         switch self {
         case .cancel: return .cancel
         case .destructive: return .destructive
@@ -25,7 +26,7 @@ public extension AlertAction {
 
     /// Returns an action with intent to cancel, circumvent, or otherwise disregard the functional
     /// result of confirmation. The action has the default title "Cancel".
-    public static var cancel: AlertAction {
+    static var cancel: AlertAction {
         return .cancel(title: NSLocalizedString("Cancel", comment: ""))
     }
 
@@ -39,7 +40,7 @@ public extension Alert {
     ///
     /// - Parameter style: the style of alert controller to create.
     /// - Returns: an alert controller corresponding with the properties of the receiver.
-    public func asController(style: UIAlertController.Style, textFieldDelegate: UITextFieldDelegate? = nil) -> UIAlertController {
+    func asController(style: UIAlertController.Style, textFieldDelegate: UITextFieldDelegate? = nil) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
             controller.addAction(UIAlertAction(title: action.title, style: action.behavior.alertStyle) { _ in
@@ -62,7 +63,7 @@ public extension Alert {
     ///
     /// - Parameter style: the style of alert controller to create.
     /// - Returns: an alert controller corresponding with the properties of the receiver.
-    public func asController(style: UIAlertController.Style, onTextFieldChanged: @escaping (UITextField, Int) -> ()) -> UIAlertController {
+    func asController(style: UIAlertController.Style, onTextFieldChanged: @escaping (UITextField, Int) -> ()) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: style)
         actions.forEach { action in
             controller.addAction(UIAlertAction(title: action.title, style: action.behavior.alertStyle) { _ in

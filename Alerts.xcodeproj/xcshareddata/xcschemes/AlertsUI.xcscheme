@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "948415772205638D007D46F2"
-               BuildableName = "Alerts.framework"
-               BlueprintName = "Alerts"
+               BlueprintIdentifier = "B5D801ED244A9BA600020301"
+               BuildableName = "AlertsUI.framework"
+               BlueprintName = "AlertsUI"
                ReferencedContainer = "container:Alerts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "948415772205638D007D46F2"
-            BuildableName = "Alerts.framework"
-            BlueprintName = "Alerts"
-            ReferencedContainer = "container:Alerts.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -59,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "948415772205638D007D46F2"
-            BuildableName = "Alerts.framework"
-            BlueprintName = "Alerts"
+            BlueprintIdentifier = "B5D801ED244A9BA600020301"
+            BuildableName = "AlertsUI.framework"
+            BlueprintName = "AlertsUI"
             ReferencedContainer = "container:Alerts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
