@@ -8,7 +8,7 @@
 
 import Alerts
 import Foundation
-import UIKit
+@preconcurrency import UIKit
 
 internal extension AlertAction.Behavior {
 
@@ -32,9 +32,9 @@ public extension AlertAction {
 
 }
 
-fileprivate var changeObserversKey = UInt8(101)
+nonisolated(unsafe) private var changeObserversKey = UInt8(101)
 
-public extension Alert {
+@MainActor public extension Alert {
 
     /// Projects the context representation into a view-layer alert controller.
     ///
@@ -89,7 +89,7 @@ public extension Alert {
 
 }
 
-fileprivate class TextFieldChangeObserver {
+@MainActor fileprivate class TextFieldChangeObserver {
 
     private let order: Int
     private let implementation: (UITextField, Int) -> ()

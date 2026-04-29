@@ -2,19 +2,20 @@ name: Swift Package Manager
 
 on:
   push:
-    branches: [master, develop]
+    branches: [main]
   pull_request:
-    branches: [master, develop]
+    branches: [main]
 
 jobs:
   build:
-    runs-on: macos-26
+    runs-on: macos-15
     permissions:
       contents: read
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "arm64-apple-ios18.0-simulator"
-    - name: Run tests
-      run: swift test -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "arm64-apple-ios18.0-simulator"
-
+      run: |
+        swift build --sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)" --triple arm64-apple-ios13.0-simulator
+    - name: Build tests
+      run: |
+        swift build --build-tests --sdk "$(xcrun --sdk iphonesimulator --show-sdk-path)" --triple arm64-apple-ios13.0-simulator

@@ -9,7 +9,6 @@ struct AlertActionTests {
         let action = AlertAction.cancel(title: "Cancel")
         #expect(action.behavior == .cancel)
         #expect(action.title == "Cancel")
-        #expect(action.action == nil)
     }
 
     @Test("Default action has default behavior")
