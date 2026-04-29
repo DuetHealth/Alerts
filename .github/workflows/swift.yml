@@ -1,19 +1,17 @@
-name: Swift Package Manager
+name: Swift
 
 on:
   push:
-    branches: [master, develop]
+    branches: [main]
   pull_request:
-    branches: [master, develop]
+    branches: [main]
 
 jobs:
-  build:
-    runs-on: macos-latest
+  test:
+    runs-on: macos-15
+    permissions:
+      contents: read
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios13.0-simulator" -v
-      # Eventually add and run tests.
-      #    - name: Run tests
-      #      run: swift test -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios13.0-simulator"
-
+    - uses: actions/checkout@v4
+    - name: Test
+      run: xcodebuild test -workspace . -scheme Alerts-Package -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' -skipPackagePluginValidation -quiet

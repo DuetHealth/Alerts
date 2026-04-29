@@ -1,19 +1,13 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift Package Manager](https://github.com/DuetHealth/Alerts/workflows/Swift%20Package%20Manager/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3A%22Swift+Package+Manager%22) 
-[![Actions Status](https://github.com/DuetHealth/Alerts/workflows/carthage/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3ACarthage) 
-[![Actions Status](https://github.com/DuetHealth/Alerts/workflows/cocoapods/badge.svg)](https://github.com/DuetHealth/Alerts/actions?query=workflow%3ACocoapods)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Swift](https://github.com/DuetHealth/Alerts/actions/workflows/swift.yml/badge.svg)](https://github.com/DuetHealth/Alerts/actions/workflows/swift.yml)
 
 # Alerts
 
 Alerts is a μ-framework abstraction of modal contexts ("alerts"). The core library exposes the necessary data constructs for creating abstract alerts; the codebase also includes platform-specific functions for automatically producing resultant controls.
 
 
-## Usage	
+## Usage    
 
-### Installation	
-
-Cocoapods: `pod 'Alerts', git: 'https://github.com/DuetHealth/Alerts.git'`. See [Alerts.podspec](Alerts.podspec) for more information.	
-
-Carthage: `github "DuetHealth/Alerts" ~> 2.0 && carthage update`	
+### Installation    
 
 Swift Package Manager: `.package(url: "https://github.com/DuetHealth/Alerts.git", from: "2.0.0")`
 
@@ -39,8 +33,3 @@ let alert = Alert(title: "Hello", message: "This is a sample alert", textFields:
 import AlertsUI
 alert.asController(style: .alert)
 ```
-
-
-## Notes
-
-* As of now, the podspec is only configured for iOS.
