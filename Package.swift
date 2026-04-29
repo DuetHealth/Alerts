@@ -14,8 +14,8 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "Alerts", dependencies: [], path: "Alerts"),
-        .target(name: "AlertsUI", dependencies: ["Alerts"], path: "AlertsUI"),
+        .target(name: "Alerts", dependencies: [], path: "Alerts", exclude: ["Info.plist"]),
+        .target(name: "AlertsUI", dependencies: ["Alerts"], path: "AlertsUI", exclude: ["Info.plist"]),
         .testTarget(name: "AlertsTests", dependencies: ["Alerts"], path: "Tests/AlertsTests"),
     ]
 )
